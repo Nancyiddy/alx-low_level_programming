@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *print_times_table
+ *print_times_table - print a times table for a given number n
  * @n: the maximum number
  *
  */

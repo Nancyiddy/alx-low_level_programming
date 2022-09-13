@@ -2,9 +2,9 @@
 
 /**
  * print_last_digit - print the last digit of an integer
- * @num: the number to be processed
+ * @n: the number to be processed
  *
- * Return: last digit of num
+ * Return: last digit.
  */
 int print_last_digit(int n)
 {

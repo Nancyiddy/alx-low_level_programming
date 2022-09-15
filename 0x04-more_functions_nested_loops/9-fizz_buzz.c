@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - implement the Fizz Buzz program
+ * main - prints Fizz Buzz.
  *
  * Description: print Fizz for multiples of 3 and Buzz for multiples
  * of 5, and FizzBuzz for multiples of both

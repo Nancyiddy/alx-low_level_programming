@@ -1,1 +1,2 @@
-My second project on C - Pointers, arrays and strings
+# alx-low_level_programming
+C- Programming 

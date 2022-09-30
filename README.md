@@ -1,1 +1,1 @@
-This is 0x06. C - More pointers, arrays and strings
+C - static libraries](0x09. C - Static libraries)

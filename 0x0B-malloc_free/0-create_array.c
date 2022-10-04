@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "main.h"
 
 /**
@@ -8,33 +7,19 @@
  * @ch: character to initialize the array
  *
  * Return: NULL if size is 0 or fails to allocate memory,
-   *		otherwise pointer to the array
+ *		otherwise pointer to the array
  */
 char *create_array(unsigned int size, char c)
 {
-	char *buffer;
-	unsigned int position;
+	unsigned int i;
+	char *s;
 
-	if (size ==0)
-	{
-	return (NULL);
-	}
-	buffer = (char *) malloc(size * sizeof(c));
-
-	if (buffer ==0)
-	{
-	return (NULL);
-	}
-
-	else 
-	{
-	position = 0;
-	while (position < size)
-	{
-	*(buffer + position) = c;
-	position++;
-	}
-
-	return (buffer);
+	if (size == 0)
+		return (NULL);
+	s = (char *)malloc(size * sizeof(char));
+	if (s == NULL)
+		return (NULL);
+	for (i = 0; i < size; i++)
+		s[i] = c;
+	return (s);
 }
-

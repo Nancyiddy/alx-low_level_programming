@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stddef.h>
 /**
  * alloc_grid - create a multidimensional array initialized to 0
  *

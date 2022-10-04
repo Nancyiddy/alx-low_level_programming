@@ -1,12 +1,9 @@
 #include "main.h"
-#include <stddef.h>
 /**
- * alloc_grid - create a multidimensional array initialized to 0
- *
+ * alloc_grid - allocating 2d array
  * @width: width of the array
  * @height: height of the array
- *
- * Return: pointer to the array, or NULL if negative dimensions provided
+ * Return: pointer to the array
  */
 int **alloc_grid(int width, int height)
 {

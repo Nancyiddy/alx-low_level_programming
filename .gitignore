@@ -9,4 +9,4 @@
 *-main.c
 
 # Ignore executable files
-*.out
+*.out 

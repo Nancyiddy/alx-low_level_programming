@@ -1,5 +1,5 @@
 # Function pointers
-Project done during **Full Stack Software Engineering as ALX Student 2022. It aims to learn about function pointers in **C language**.
+Project done during **Full Stack Software Engineering as ALX Student 2022**. It aims to learn about function pointers in **C language**.
 
 ## Technologies
 * C files are compiled using `gcc 4.8.4`

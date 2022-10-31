@@ -148,7 +148,6 @@ void print_magic(char *ptr)
 
 	for (bytes = 0; bytes < 16; bytes++)
 		printf(" %02x", ptr[bytes]);
-
 	printf("\n");
 
 }

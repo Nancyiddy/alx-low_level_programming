@@ -1,27 +1,32 @@
 #!/usr/bin/python3
-""" Module that contains the island_perimeter function """
+"""Module to return the perimeter of a an island"""
 
 
 def island_perimeter(grid):
-    """ Function that returns the perimeter of island described in grid """
-    perimeter = 0
+    """Function that returns the perimeter of an island"""
 
-    nrows = len(grid)
+    perim = 0
+    count = 0
+    collision = 0
+    collision_pts = 0
+    index_list = []
+    l_length = len(grid[0])
 
-    if grid != []:
-        ncolumns = len(grid[0])
-
-    for a in range(nrows):
-        for b in range(ncolumns):
-            if grid[a][b] == 1:
-                if (a - 1) == -1 or grid[a - 1][b] == 0:
-                    perimeter += 1
-                if (a + 1) == nrows or grid[a + 1][b] == 0:
-                    perimeter += 1
-                if (b - 1) == -1 or grid[a][b - 1] == 0:
-                    perimeter += 1
-                if (b + 1) == ncolumns or grid[a][b + 1] == 0:
-                    perimeter += 1
-
-    return perimeter
-
+    for i in range(l_length):
+        index_list.append(0)
+    for i in range(0, len(grid)):
+        for j in range(0, len(grid[0])):
+            if grid[i][j] == 1:
+                count += 4
+                if j + 1 < len(grid[0]):
+                    if grid[i][j + 1] == 1:
+                        collision += 1
+                if index_list[j] == 0:
+                    index_list[j] = 1
+                else:
+                    collision += 1
+            else:
+                index_list[j] = 0
+    collision_pts = collision * 2
+    perim = count - collision_pts
+    return perim

@@ -1,8 +1,8 @@
-all : main.o holberton.o
-	gcc -o holberton main.o holberton.o
+all : main.o school.o
+	gcc -o school main.o school.o
 
 main.o : main.c m.h
 	gcc -c main.c
 
-holberton.o : holberton.c m.h
-	gcc -c holberton.c
+holberton.o : school.c m.h
+	gcc -c school.c
